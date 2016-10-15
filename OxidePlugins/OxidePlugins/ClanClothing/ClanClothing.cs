@@ -120,11 +120,11 @@ namespace Oxide.Plugins
                 EconomicsCost = config?.EconomicsCost ?? 0,
                 Commands = config?.Commands ?? new Hash<string, string>
                 {
-                    ["CheckCost"] = "cc_check",
-                    ["ViewClanClothing"] = "cc_view",
-                    ["ClaimCommand"] = "cc_claim",
-                    ["AddCommand"] = "cc_add",
-                    ["RemoveCommand"] = "cc_remove"
+                    ["CheckCost"] = "vv_check",
+                    ["ViewClanClothing"] = "vv_view",
+                    ["ClaimCommand"] = "vv_claim",
+                    ["AddCommand"] = "vv_add",
+                    ["RemoveCommand"] = "vv_remove"
                 }
             };
         }
@@ -641,10 +641,10 @@ namespace Oxide.Plugins
         {
             PrintToChat(player, @"[<color=yellow>Clan Clothing</color>] Help Text:\n
                                 Allows clan owners to set their clans clothing. Clan members can then claim their clan clothing\n
-                                <color=yellow>/cc</color> - Check if you can afford clan clothing\n
-                                <color=yellow>/cc_claim</color> - Claim your clans clothing\n
-                                <color=yellow>/cc_add</color> - Allows the clan owner to set their current clothing as the clan clothing\n
-                                <color=yellow>/cc_remove</color> - Allows the clan owner to remove their current clan clothing\n
+                                <color=yellow>/vv</color> - Check if you can afford clan clothing\n
+                                <color=yellow>/vv_claim</color> - Claim your clans clothing\n
+                                <color=yellow>/vv_add</color> - Allows the clan owner to set their current clothing as the clan clothing\n
+                                <color=yellow>/vv_remove</color> - Allows the clan owner to remove their current clan clothing\n
                                 This will also save the skin of the clothing item added");
         }
         #endregion
